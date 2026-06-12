@@ -5,7 +5,7 @@ describe('Testando os Endpoints da API', () => {
   it('Deve retornar 200 na rota raiz', async () => {
     const res = await request(app).get('/');
     expect(res.statusCode).toEqual(200);
-    expect(res.body.message).toBe('API DevSecOps da UFLA rodando com sucesso!');
+    expect(res.body.message).toBe('API DevSecOps rodando com sucesso!');
   });
 
   it('Deve somar dois números corretamente', async () => {

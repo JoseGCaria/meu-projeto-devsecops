@@ -1,11 +1,12 @@
 const express = require('express');
 const app = express();
 
+app.disable('x-powered-by');
 app.use(express.json());
 
 // Rota de teste (Ponto de entrada)
 app.get('/', (req, res) => {
-  res.status(200).json({ message: 'API DevSecOps da UFLA rodando com sucesso!' });
+  res.status(200).json({ message: 'API DevSecOps rodando com sucesso!' });
 });
 
 // Exemplo de lógica de soma para testar qualidade/corretude
